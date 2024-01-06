@@ -12,7 +12,7 @@ import ImageIO
 
 struct GIFImageView: UIViewRepresentable {
     let gifURL: URL
-
+    
     func makeUIView(context: Context) -> UIView {
         let containerView = UIView()
         containerView.backgroundColor = UIColor.clear
@@ -28,7 +28,7 @@ struct GIFImageView: UIViewRepresentable {
         ])
         return containerView
     }
-
+    
     func updateUIView(_ uiView: UIView, context: Context) {
         // No update needed for now
     }
